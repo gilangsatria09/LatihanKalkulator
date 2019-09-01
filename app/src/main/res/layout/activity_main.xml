@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/ac"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:padding="15dp"
+        android:text="AC"
+        android:textSize="20dp"
+        android:textStyle="bold"
+
+        app:layout_constraintBottom_toTopOf="@+id/tujuh"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="120dp"
+        android:layout_marginRight="10dp"
+        android:textSize="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/sembilan"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ac"
+        app:layout_constraintTop_toTopOf="parent"
+        android:enabled="false"/>
+
+    <Button
+        android:id="@+id/decimal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:padding="15dp"
+        android:textSize="20dp"
+        android:text="."/>
+
+    <Button
+        android:id="@+id/kali"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="10dp"
+        android:text="*"
+        android:textSize="20dp"
+        android:padding="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/decimal"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/samadengan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="="
+        android:padding="15dp"
+        app:layout_constraintBottom_toBottomOf="@+id/kali"
+        app:layout_constraintEnd_toStartOf="@+id/bagi"
+        app:layout_constraintStart_toEndOf="@+id/kali" />
+
+    <Button
+        android:id="@+id/bagi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:text="/"
+        android:textSize="20dp"
+        android:padding="15dp"
+        app:layout_constraintBottom_toBottomOf="@+id/samadengan"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/tambah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="10dp"
+        android:padding="15dp"
+        android:text="+"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/kali"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/nol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="20dp"
+        android:padding="15dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/samadengan"
+        app:layout_constraintEnd_toStartOf="@+id/kurang"
+        app:layout_constraintStart_toEndOf="@+id/tambah" />
+
+    <Button
+        android:id="@+id/kurang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:textSize="20dp"
+        android:padding="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/bagi"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"/>
+    <Button
+        android:id="@+id/satu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="10dp"
+        android:text="1"
+        android:textSize="20dp"
+        android:padding="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/tambah"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/dua"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="2"
+        android:textSize="20dp"
+        android:padding="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/nol"
+        app:layout_constraintEnd_toStartOf="@+id/kurang"
+        app:layout_constraintStart_toEndOf="@+id/satu" />
+
+    <Button
+        android:id="@+id/tiga"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3"
+        android:textSize="20dp"
+        android:padding="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/kurang"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"/>
+
+    <Button
+        android:id="@+id/empat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="10dp"
+        android:text="4"
+        android:textSize="20dp"
+        android:padding="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/satu"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/lima"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="5"
+        android:textSize="20dp"
+        android:padding="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/dua"
+        app:layout_constraintEnd_toStartOf="@+id/enam"
+        app:layout_constraintStart_toEndOf="@+id/empat" />
+
+    <Button
+        android:id="@+id/enam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:text="6"
+        android:textSize="20dp"
+        android:padding="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/tiga"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+    <Button
+        android:id="@+id/tujuh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="10dp"
+        android:text="7"
+        android:textSize="20dp"
+        android:padding="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/empat"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/delapan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="8"
+        android:textSize="20dp"
+        android:padding="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/lima"
+        app:layout_constraintEnd_toStartOf="@+id/enam"
+        app:layout_constraintStart_toEndOf="@+id/empat" />
+
+    <Button
+        android:id="@+id/sembilan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:text="9"
+        android:textSize="20dp"
+        android:padding="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/enam"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>
